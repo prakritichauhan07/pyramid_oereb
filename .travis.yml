@@ -1,0 +1,11 @@
+language: python
+arch:
+  - amd64
+  - arm64
+python:
+  - "3.7"
+install:
+  - sudo service postgresql stop
+  - make install
+script:
+  - make tests
